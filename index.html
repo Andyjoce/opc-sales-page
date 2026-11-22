@@ -76,7 +76,7 @@
   .video.r916{aspect-ratio:9/16;width:min(100%,calc(72vh * 9 / 16));margin-left:auto;margin-right:auto}
   .video.r169{aspect-ratio:16/9}
   .video.r167{aspect-ratio:16/7}
-  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain;background:#000}
   .video .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
     gap:10px;color:#fff;text-align:center;padding:20px;
     background:linear-gradient(160deg,var(--c,#F07A4F),#2E2A26)}
@@ -482,20 +482,18 @@
 var SIGNUP_URL = "https://doersai.org/courses/vibe-coding";
 
 /* ================================================================
-   ★ 六位經理的介紹影片 —— 老大只要改這裡！
-   id    ：Google Drive 影片的 ID，也可以直接貼整條分享連結
-           例：https://drive.google.com/file/d/【這一段就是ID】/view?usp=sharing
-           （影片要設成「知道連結的任何人都能檢視」才播得出來）
-   ratio ："9:16"＝直式短影音；"16:9"＝橫式影片；"16:7"＝超寬橫式（目前 6 支經理影片都是 16:7）
-   留空 "" 就會顯示「待放」的佔位框。
+   ★ 六位經理的介紹影片（影片檔放在網站的 videos/ 資料夾）
+   src   ：影片檔路徑；poster：影片播放前顯示的封面圖
+   ratio ："16:7"＝超寬橫式（目前 6 支都是）；"16:9"＝橫式；"9:16"＝直式
+   src 留空 "" 就會顯示「待放」的佔位框。
    ================================================================ */
 var VIDEOS = {
-  luna: { id: "1wffYrfaD4Nam8nt1WfV6aMTrcDus48kB", ratio: "16:7" },   // Luna 品牌行銷部
-  ken:  { id: "19-jJIfHwhmGy5I-D-A964JfhbI8M-G-K", ratio: "16:7" },   // Ken  行政管理部
-  mia:  { id: "1GOfISxRp298lxS01l0HofSSMZPFiLjxn", ratio: "16:7" },   // Mia  客戶服務部
-  leo:  { id: "1v8ZCZabfF-tTg7Bo50pn5oWh1jGMJV3e", ratio: "16:7" },   // Leo  業務自媒體部
-  zoe:  { id: "1-__uw33kxrVq5_1Ah9fVHmLrFbVUdpdI", ratio: "16:7" },   // Zoe  數據營運部
-  max:  { id: "1SLqCRWm4S8oLnQKomPgUs-1Plp1PmO4L", ratio: "16:7" }    // Max  產品研發部
+  luna: { src: "videos/luna.mp4", poster: "assets/posters/luna.jpg", ratio: "16:7" },   // Luna 品牌行銷部
+  ken:  { src: "videos/ken.mp4",  poster: "assets/posters/ken.jpg",  ratio: "16:7" },   // Ken  行政管理部
+  mia:  { src: "videos/mia.mp4",  poster: "assets/posters/mia.jpg",  ratio: "16:7" },   // Mia  客戶服務部
+  leo:  { src: "videos/leo.mp4",  poster: "assets/posters/leo.jpg",  ratio: "16:7" },   // Leo  業務自媒體部
+  zoe:  { src: "videos/zoe.mp4",  poster: "assets/posters/zoe.jpg",  ratio: "16:7" },   // Zoe  數據營運部
+  max:  { src: "videos/max.mp4",  poster: "assets/posters/max.jpg",  ratio: "16:7" }    // Max  產品研發部
 };
 
 /* ================================================================
@@ -517,25 +515,20 @@ var AVATARS = {
     if(src){ img.src = src; img.closest(".avatar-wrap").classList.add("has-photo"); }
   });
   document.querySelectorAll("a.cta").forEach(function(a){ a.href = SIGNUP_URL; });
-  function driveId(v){
-    if(!v) return "";
-    var m = String(v).match(/\/d\/([A-Za-z0-9_-]{10,})/) || String(v).match(/[?&]id=([A-Za-z0-9_-]{10,})/);
-    return m ? m[1] : String(v).trim();
-  }
   document.querySelectorAll(".video[data-mgr]").forEach(function(box){
     var cfg = VIDEOS[box.getAttribute("data-mgr")] || {};
     box.classList.add(cfg.ratio === "16:9" ? "r169" : cfg.ratio === "16:7" ? "r167" : "r916");
-    var id = driveId(cfg.id);
-    if(id){
-      var f = document.createElement("iframe");
-      f.src = "https://drive.google.com/file/d/" + id + "/preview";
-      f.allow = "autoplay; fullscreen";
-      f.loading = "lazy";
-      f.title = box.getAttribute("data-label").replace("（待放）", "");
-      box.appendChild(f);
+    if(cfg.src){
+      var v = document.createElement("video");
+      v.controls = true; v.preload = "metadata";
+      v.setAttribute("playsinline", ""); v.setAttribute("webkit-playsinline", "");
+      if(cfg.poster) v.poster = cfg.poster;
+      v.src = cfg.src;
+      v.setAttribute("aria-label", box.getAttribute("data-label").replace("（待放）", ""));
+      box.appendChild(v);
     } else {
       box.innerHTML = '<div class="ph"><div class="play">▶</div><strong>' + box.getAttribute("data-label") +
-        '</strong><small>' + (cfg.ratio === "9:16" ? "9:16 直式" : cfg.ratio + " 橫式") + '・Google Drive 影片</small></div>';
+        '</strong><small>' + (cfg.ratio === "9:16" ? "9:16 直式" : cfg.ratio + " 橫式") + '・影片</small></div>';
     }
   });
 })();
