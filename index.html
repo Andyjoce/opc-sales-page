@@ -5,351 +5,387 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>OPC 一人公司實戰班｜一個人，也能打造一間會運作的公司</title>
 <meta name="description" content="結合 AI、Vibe Coding、自動化與六大 OPC 營運模組，1 天線下密集實作，把 AI 變成你的六大部門經理。">
-<meta name="theme-color" content="#FFF6EC">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8F%A2%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230E1A2B%22/%3E%3Ctext x=%2232%22 y=%2241%22 text-anchor=%22middle%22 font-family=%22Arial,sans-serif%22 font-weight=%22700%22 font-size=%2222%22 fill=%22%23E9C58B%22%3EOPC%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OPC 一人公司實戰班">
 <meta property="og:title" content="OPC 一人公司實戰班｜一個人，也能打造一間會運作的公司">
 <meta property="og:description" content="把 AI 變成你的六大部門經理：品牌、行政、客服、自媒體、數據、研發。1 天線下密集實作，高雄 11/28・吉隆坡 12/9・台北 12/18。">
 <meta property="og:url" content="https://andyjoce.github.io/opc-sales-page/">
 <meta property="og:image" content="https://andyjoce.github.io/opc-sales-page/assets/hero.jpg">
-<meta property="og:image:width" content="860">
-<meta property="og:image:height" content="645">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="675">
 <meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-  :root{
-    --bg:#FFF8F0; --ink:#2E2A26; --sub:#6B625A; --line:#EFE3D5;
-    --brand:#F07A4F; --brand-d:#D9603A; --mint:#5BAE95; --card:#FFFFFF;
-    --side:#ECE6DF;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%}
-  body{background:var(--side);color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
-    font-size:17px;line-height:1.8;letter-spacing:.02em}
-  /* 手機寬度欄位：電腦上也固定在中間，兩側中性底色 */
-  .page{max-width:430px;margin:0 auto;background:var(--bg);min-height:100vh;
-    box-shadow:0 0 40px rgba(0,0,0,.08);padding-bottom:96px;overflow:hidden}
-  img{display:block;width:100%;height:auto}
-  section{padding:44px 22px}
-  h1{font-size:30px;line-height:1.35;font-weight:900;letter-spacing:.01em}
-  h2{font-size:25px;line-height:1.4;font-weight:900;margin-bottom:14px}
-  h3{font-size:19px;line-height:1.45;font-weight:800}
-  p{margin-bottom:14px;color:var(--ink)}
-  .sub{color:var(--sub)}
-  .eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--brand-d);
-    background:#FFE8DC;border-radius:999px;padding:4px 12px;margin-bottom:12px}
-  .hl{background:linear-gradient(transparent 60%,#FFD9C4 60%)}
-  .img-r{border-radius:20px;overflow:hidden;margin:18px 0;box-shadow:0 8px 24px rgba(120,80,40,.10)}
-  .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:56px;
-    border-radius:16px;background:var(--brand);color:#fff;font-size:18px;font-weight:800;text-decoration:none;
-    box-shadow:0 6px 0 var(--brand-d);margin:22px 0 8px;letter-spacing:.06em}
-  .btn:active{transform:translateY(3px);box-shadow:0 3px 0 var(--brand-d)}
-  .btn-note{font-size:13px;color:var(--sub);text-align:center}
-  /* Hero */
-  .hero{padding:0 0 36px;background:linear-gradient(180deg,#FFEBDD 0%,var(--bg) 100%)}
-  .hero .top{padding:28px 22px 6px}
-  .hero .tag{font-size:14px;font-weight:700;color:var(--mint)}
-  .hero h1{margin:8px 0 12px}
-  .hero .inner{padding:0 22px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
-  .chip{font-size:14px;font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px}
-  /* Pain */
-  .pain{background:#fff}
-  .pain ul{list-style:none;margin:10px 0 18px}
-  .pain li{position:relative;padding:12px 14px 12px 44px;background:#FFF6F1;border-radius:14px;margin-bottom:10px;font-weight:600}
-  .pain li::before{content:"😮‍💨";position:absolute;left:14px;top:12px}
-  .turn{font-size:20px;font-weight:900;text-align:center;margin:24px 0 0}
-  /* What is OPC */
-  .formula{display:flex;align-items:center;justify-content:center;gap:10px;margin:18px 0;flex-wrap:wrap}
-  .formula span{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;font-weight:900;font-size:18px}
-  .formula b{font-size:22px;color:var(--brand)}
-  .dept-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
-  .dept-grid a{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;text-decoration:none;color:var(--ink);min-height:64px}
-  .dept-grid strong{display:block;font-size:16px}
-  .dept-grid small{color:var(--sub);font-size:13px}
-  /* Manager */
-  .mgr{border-top:8px solid var(--c,#F07A4F);background:#fff;margin-top:14px}
-  .mgr:nth-of-type(even){background:#FFFCF8}
-  .video{position:relative;width:100%;border-radius:18px;overflow:hidden;background:#2E2A26;margin-bottom:22px}
-  .video.r916{aspect-ratio:9/16;width:min(100%,calc(72vh * 9 / 16));margin-left:auto;margin-right:auto}
-  .video.r169{aspect-ratio:16/9}
-  .video.r167{aspect-ratio:16/7}
-  .video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain;background:#000}
-  .video .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
-    gap:10px;color:#fff;text-align:center;padding:20px;
-    background:linear-gradient(160deg,var(--c,#F07A4F),#2E2A26)}
-  .video .ph .play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:26px}
-  .video .ph strong{font-size:18px}
-  .video .ph small{font-size:13px;opacity:.85}
-  .mgr-head{display:flex;gap:14px;align-items:center;margin-bottom:14px}
-  .avatar{width:84px;height:84px;border-radius:50%;overflow:hidden;flex:0 0 84px;border:3px solid var(--c);background:#fff}
-  .avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-  .avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:4px;flex:0 0 92px}
-  .av-note{font-size:11px;color:var(--sub);background:#F3EEE8;border-radius:6px;padding:1px 6px;white-space:nowrap}
-  .avatar-wrap.has-photo .av-note{display:none}
-  .sessions{display:grid;gap:12px;margin:16px 0 6px}
-  .session{background:#fff;border:1px solid var(--line);border-left:6px solid var(--mint);border-radius:14px;padding:14px 16px}
-  .session .city{font-size:13px;font-weight:800;color:var(--mint)}
-  .session .date{font-size:20px;font-weight:900;margin:2px 0}
-  .session .no{font-size:13px;color:var(--sub);font-weight:700}
-  .session .venue{font-size:15px;margin-top:6px;line-height:1.6}
-  .session .addr{font-size:13px;color:var(--sub);line-height:1.6}
-  .teachers{display:grid;gap:16px;margin-top:16px}
-  .teacher{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 4px 14px rgba(120,80,40,.06)}
-  .teacher .ph{display:flex;gap:14px;align-items:center;padding:16px 16px 6px}
-  .teacher .ph img{width:92px;height:92px;border-radius:50%;object-fit:cover;object-position:50% 20%;flex:0 0 92px;border:3px solid #FFE3D3}
-  .teacher h3{font-size:21px}
-  .teacher .ttl{font-size:14px;color:var(--brand-d);font-weight:700;line-height:1.5}
-  .teacher .tagline{font-size:15px;font-weight:800;margin:4px 16px 8px;padding:8px 12px;background:#FFF5EE;border-radius:10px}
-  .teacher .bio{padding:0 16px 6px;font-size:15px;color:var(--ink);line-height:1.75}
-  .teacher .bio p{margin-bottom:8px}
-  .teacher .bio ul{list-style:none;margin:0 0 8px}
-  .teacher .bio li{padding-left:1em;text-indent:-1em}
-  .teacher .bio li::before{content:"● ";color:var(--brand)}
-  .teacher details{border:0;border-top:1px dashed var(--line);border-radius:0;margin:0}
-  .teacher summary{font-size:14px;min-height:48px;padding:12px 44px 12px 16px;color:var(--brand-d)}
-  .teacher .tags{display:flex;flex-wrap:wrap;gap:6px;padding:4px 16px 16px}
-  .teacher .tags span{font-size:12px;font-weight:700;background:#F1FAF6;color:#3E7F6B;border-radius:8px;padding:3px 8px}
-  .mgr-head .dept{font-size:14px;font-weight:700;color:var(--c)}
-  .mgr-head h3{font-size:24px}
-  .slogan{font-size:18px;font-weight:800;background:var(--soft,#FFF1E8);border-left:5px solid var(--c);border-radius:0 14px 14px 0;padding:12px 14px;margin:6px 0 18px}
-  .duties{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 20px}
-  .duties span{font-size:13px;font-weight:700;background:var(--soft,#FFF1E8);border-radius:8px;padding:4px 9px}
-  .can-title{font-size:16px;font-weight:900;margin-bottom:10px}
-  .cards{display:grid;gap:12px}
-  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 16px 14px;box-shadow:0 4px 14px rgba(120,80,40,.06)}
-  .card .n{display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--c);color:#fff;font-weight:900;font-size:14px;align-items:center;justify-content:center;margin-bottom:6px}
-  .card h4{font-size:17px;margin-bottom:4px}
-  .card p{font-size:15px;color:var(--sub);margin:0;line-height:1.7}
-  .learn{margin-top:18px;background:var(--soft,#FFF1E8);border-radius:16px;padding:14px 16px;font-size:15px}
-  .learn b{display:block;font-size:14px;color:var(--c);margin-bottom:4px}
-  .learn p{margin:0;font-size:15px}
-  /* Day */
-  .timeline{list-style:none;margin:16px 0 0;border-left:3px dashed #F3C9B4;padding-left:18px}
-  .timeline li{position:relative;margin-bottom:16px}
-  .timeline li::before{content:"";position:absolute;left:-27px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--brand)}
-  .timeline time{font-weight:900;color:var(--brand-d);font-size:15px}
-  .timeline p{margin:2px 0 0;font-size:16px}
-  .footnote{font-size:13px;color:var(--sub);margin-top:6px}
-  /* Learn / get */
-  .get{background:#fff}
-  .get ol{list-style:none;counter-reset:g;margin-top:14px}
-  .get li{counter-increment:g;position:relative;padding:14px 14px 14px 54px;border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
-  .get li::before{content:counter(g);position:absolute;left:14px;top:14px;width:28px;height:28px;border-radius:8px;background:var(--mint);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:15px}
-  .get li strong{display:block}
-  .get li span{font-size:15px;color:var(--sub)}
-  /* Info */
-  .info{background:linear-gradient(180deg,#F1FAF6,#fff)}
-  .info-row{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
-  .info-row dt{font-weight:800;flex:0 0 auto}
-  .info-row dd{text-align:right;color:var(--ink)}
-  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0 4px}
-  .price{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 6px;text-align:center}
-  .price small{display:block;font-size:12px;color:var(--sub)}
-  .price strong{font-size:19px}
-  .todo{display:inline-block;background:#FFF3B0;color:#7A5A00;font-weight:800;border-radius:6px;padding:0 6px;font-size:.92em}
-  /* FAQ */
-  details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
-  summary{list-style:none;cursor:pointer;padding:16px 44px 16px 16px;font-weight:800;position:relative;min-height:56px}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";position:absolute;right:16px;top:12px;font-size:24px;color:var(--brand)}
-  details[open] summary::after{content:"−"}
-  details .a{padding:0 16px 16px;color:var(--sub);font-size:16px}
-  /* Final */
-  .final{background:linear-gradient(180deg,var(--bg),#FFE3D3);text-align:center}
-  .final h2{font-size:27px}
-  footer{padding:24px 22px 30px;font-size:12px;color:var(--sub);text-align:center}
-  /* Sticky bar */
-  .sticky{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:430px;z-index:50;
-    background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);
-    padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px}
-  .sticky .txt{flex:1;line-height:1.35}
-  .sticky .txt strong{font-size:15px;display:block}
-  .sticky .txt small{font-size:12px;color:var(--sub)}
-  .sticky a{flex:0 0 auto;min-height:50px;padding:0 22px;border-radius:14px;background:var(--brand);color:#fff;font-weight:900;font-size:17px;display:flex;align-items:center;text-decoration:none;box-shadow:0 4px 0 var(--brand-d)}
+:root{
+  --navy:#0E1A2B; --navy2:#16263D; --ink:#1C2533; --sub:#5E6878; --mute:#8A93A2;
+  --bg:#F7F4EE; --paper:#FFFFFF; --line:#E8E2D8; --gold:#C9A26A; --gold2:#E9C58B;
+  --cta1:#F07A3E; --cta2:#E5532D;
+  --r:20px; --sh:0 10px 30px rgba(14,26,43,.08); --sh2:0 18px 40px rgba(14,26,43,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:#DCD8D1;color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Noto Sans CJK TC","Microsoft JhengHei",sans-serif;
+  font-size:16.5px;line-height:1.85;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+.page{max-width:430px;margin:0 auto;background:var(--bg);min-height:100vh;box-shadow:0 0 60px rgba(0,0,0,.12);padding-bottom:92px;overflow:hidden;position:relative}
+img{display:block;width:100%;height:auto}
+section{padding:56px 24px}
+h1{font-size:34px;line-height:1.3;font-weight:900;letter-spacing:.01em}
+h2{font-size:26px;line-height:1.42;font-weight:900;letter-spacing:.01em;margin-bottom:16px}
+h3{font-size:20px;line-height:1.45;font-weight:800}
+p{margin-bottom:14px}
+b,strong{font-weight:800}
+.sub{color:var(--sub)}
+.kicker{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:800;letter-spacing:.22em;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--gold);border-radius:2px}
+.kicker em{font-style:normal;color:var(--sub);letter-spacing:.12em}
+.gold{background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.mark{background:linear-gradient(transparent 62%,rgba(233,197,139,.55) 62%)}
+.photo{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh2);margin:22px 0}
+.btn{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;border-radius:16px;
+  background:linear-gradient(135deg,var(--cta1),var(--cta2));color:#fff;font-size:17.5px;font-weight:900;text-decoration:none;letter-spacing:.06em;
+  box-shadow:0 12px 26px rgba(229,83,45,.35),inset 0 1px 0 rgba(255,255,255,.25);margin:26px 0 10px;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);animation:shine 3.6s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+.btn .arr{transition:transform .2s}
+.btn:active{transform:translateY(2px)}
+.btn-note{font-size:12.5px;color:var(--mute);text-align:center;letter-spacing:.04em}
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.btn::after{display:none}}
+
+/* HERO */
+.hero{background:radial-gradient(120% 70% at 50% 0%,#1F3556 0%,var(--navy) 60%);color:#fff;padding:0 0 44px;position:relative}
+.hero .brand{display:flex;justify-content:space-between;align-items:center;padding:18px 24px 0;font-size:12px;letter-spacing:.2em;color:rgba(255,255,255,.7);font-weight:700}
+.hero .brand b{color:var(--gold2);letter-spacing:.24em}
+.hero .copy{padding:22px 24px 0}
+.hero .tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;letter-spacing:.08em;color:var(--gold2);border:1px solid rgba(233,197,139,.4);border-radius:999px;padding:5px 12px;margin-bottom:16px;background:rgba(233,197,139,.08)}
+.hero h1{color:#fff}
+.hero .lead{color:rgba(255,255,255,.78);margin-top:14px;font-size:16px}
+.hero-img{position:relative;margin:26px 0 0}
+.hero-img img{aspect-ratio:4/3;object-fit:cover}
+.hero-img::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(transparent,var(--navy))}
+.hero .inner{padding:0 24px;margin-top:-30px;position:relative;z-index:2}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px 6px;text-align:center;backdrop-filter:blur(6px)}
+.stat strong{display:block;font-size:20px;color:var(--gold2);line-height:1.2}
+.stat small{font-size:11.5px;color:rgba(255,255,255,.7);letter-spacing:.04em}
+.hero .btn-note{color:rgba(255,255,255,.55)}
+
+/* PAIN */
+.pain{background:var(--paper)}
+.pain-list{list-style:none;margin:6px 0 20px;display:grid;gap:10px}
+.pain-list li{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--bg);border-radius:14px;font-weight:700;font-size:15.5px;line-height:1.6}
+.pain-list li::before{content:"";flex:0 0 8px;height:8px;margin-top:8px;border-radius:50%;background:var(--cta2);box-shadow:0 0 0 4px rgba(229,83,45,.12)}
+.turn{margin-top:26px;padding:22px 20px;border-radius:var(--r);background:var(--navy);color:#fff;text-align:center;font-size:20px;font-weight:900;line-height:1.5}
+.turn small{display:block;font-size:13px;color:var(--gold2);letter-spacing:.2em;font-weight:800;margin-bottom:6px}
+
+/* WHAT */
+.formula{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:20px 0;padding:16px;border-radius:var(--r);background:var(--paper);box-shadow:var(--sh)}
+.formula span{flex:1;text-align:center;font-weight:900;font-size:15px;line-height:1.35}
+.formula span small{display:block;font-size:11px;color:var(--mute);font-weight:700;letter-spacing:.1em}
+.formula b{color:var(--gold);font-size:20px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.team a{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border-radius:16px;padding:10px 8px 12px;text-align:center;box-shadow:var(--sh);border-top:3px solid var(--c)}
+.team img{width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 6px;border:2px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+.team strong{display:block;font-size:15px;line-height:1.3}
+.team small{font-size:11.5px;color:var(--sub)}
+
+/* MANAGER */
+.mgr-intro{background:var(--navy);color:#fff;padding:52px 24px 40px;text-align:left}
+.mgr-intro h2{color:#fff}
+.mgr-intro p{color:rgba(255,255,255,.75);margin:0}
+.mgr{background:var(--paper);padding:44px 22px 48px;position:relative}
+.mgr:nth-of-type(even){background:var(--bg)}
+.mgr::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--c),transparent)}
+.mgr-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.mgr-no{font-size:30px;font-weight:900;color:var(--c);letter-spacing:.02em;font-family:Georgia,"Times New Roman",serif}
+.mgr-no small{font-size:13px;color:var(--mute);font-family:inherit}
+.mgr-en{font-size:11.5px;font-weight:800;letter-spacing:.22em;color:var(--mute);text-transform:uppercase}
+.video{position:relative;width:100%;border-radius:18px;overflow:hidden;background:#0B0F16;box-shadow:var(--sh2)}
+.video.r916{aspect-ratio:9/16;width:min(100%,calc(72vh * 9 / 16));margin:0 auto}
+.video.r169{aspect-ratio:16/9}
+.video.r167{aspect-ratio:16/7}
+.video video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+.video .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fff;text-align:center;padding:16px;background:linear-gradient(160deg,var(--c),#0B0F16)}
+.mgr-id{display:flex;gap:16px;align-items:center;margin:-26px 0 18px 14px;position:relative;z-index:2}
+.avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:4px;flex:0 0 auto}
+.avatar{width:86px;height:86px;border-radius:50%;overflow:hidden;border:4px solid var(--paper);box-shadow:0 8px 20px rgba(14,26,43,.18);background:#eee}
+.mgr:nth-of-type(even) .avatar{border-color:var(--bg)}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.av-note{font-size:11px;color:var(--sub);background:#EFEAE2;border-radius:6px;padding:1px 6px;white-space:nowrap}
+.avatar-wrap.has-photo .av-note{display:none}
+.mgr-id > div:last-child{padding-top:22px}
+.mgr-id .dept{font-size:12.5px;font-weight:800;color:var(--c);letter-spacing:.06em}
+.mgr-id h3{font-size:28px;line-height:1.2}
+.mgr-id h3 span{font-size:15px;color:var(--sub);font-weight:700}
+.slogan{position:relative;font-size:19px;font-weight:900;line-height:1.55;padding:18px 18px 18px 22px;margin:0 0 18px;border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--c) 12%,#fff),#fff);border:1px solid color-mix(in srgb,var(--c) 22%,#fff);color:color-mix(in srgb,var(--c) 70%,#1C2533)}
+.duties{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 24px}
+.duties span{font-size:12.5px;font-weight:700;color:color-mix(in srgb,var(--c) 75%,#1C2533);background:color-mix(in srgb,var(--c) 9%,#fff);border:1px solid color-mix(in srgb,var(--c) 18%,#fff);border-radius:999px;padding:3px 11px}
+.can-title{font-size:13px;font-weight:900;letter-spacing:.14em;color:var(--sub);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.can-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.caps{display:grid;gap:10px}
+.cap{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 18px rgba(14,26,43,.05)}
+.mgr:nth-of-type(odd) .cap{background:#FCFBF8}
+.cap-n{flex:0 0 38px;height:38px;border-radius:12px;background:var(--c);color:#fff;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;box-shadow:0 6px 14px color-mix(in srgb,var(--c) 35%,transparent)}
+.cap h4{font-size:16.5px;line-height:1.45;margin-bottom:2px}
+.cap p{font-size:14.5px;color:var(--sub);margin:0;line-height:1.7}
+.learn{margin-top:16px;border-radius:16px;padding:16px 18px;background:var(--navy);color:rgba(255,255,255,.85)}
+.learn b{display:block;font-size:12.5px;color:var(--gold2);letter-spacing:.1em;margin-bottom:4px}
+.learn p{margin:0;font-size:14.5px;line-height:1.75}
+
+/* DAY */
+.day{background:var(--paper)}
+.timeline{list-style:none;margin:20px 0 0;position:relative}
+.timeline::before{content:"";position:absolute;left:44px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold2),var(--line))}
+.timeline li{display:flex;gap:18px;margin-bottom:18px;position:relative}
+.timeline time{flex:0 0 36px;font-weight:900;color:var(--gold);font-size:13.5px;padding-top:2px}
+.timeline li::before{content:"";position:absolute;left:39px;top:9px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--gold)}
+.timeline p{margin:0;padding-left:14px;font-size:15.5px;line-height:1.75}
+.footnote{font-size:12.5px;color:var(--mute);margin-top:8px}
+
+/* GET */
+.get{background:var(--bg)}
+.sys{list-style:none;counter-reset:g;margin-top:16px;display:grid;gap:10px}
+.sys li{counter-increment:g;display:flex;gap:14px;padding:16px;background:var(--paper);border-radius:16px;box-shadow:var(--sh)}
+.sys li::before{content:counter(g,decimal-leading-zero);flex:0 0 auto;font-family:Georgia,serif;font-weight:900;font-size:22px;color:var(--gold);line-height:1.2}
+.sys strong{display:block;font-size:16px}
+.sys span{font-size:14.5px;color:var(--sub);line-height:1.7}
+
+/* INSTRUCTORS */
+.instructors{background:var(--navy);color:#fff}
+.instructors h2{color:#fff}
+.instructors .footnote{color:rgba(255,255,255,.5)}
+.teachers{display:grid;gap:16px;margin-top:20px}
+.teacher{background:var(--paper);color:var(--ink);border-radius:var(--r);overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.teacher .ph{display:flex;gap:16px;align-items:center;padding:20px 18px 8px}
+.teacher .ph img{width:96px;height:96px;border-radius:18px;object-fit:cover;object-position:50% 20%;flex:0 0 96px;box-shadow:0 8px 18px rgba(0,0,0,.15)}
+.teacher h3{font-size:22px}
+.teacher .ttl{font-size:13px;color:var(--gold);font-weight:800;line-height:1.5;letter-spacing:.02em}
+.teacher .tagline{font-size:15px;font-weight:800;margin:8px 18px 10px;padding:10px 14px;background:var(--bg);border-left:3px solid var(--gold);border-radius:0 10px 10px 0}
+.teacher .bio{padding:0 18px 6px;font-size:14.5px;line-height:1.8}
+.teacher .bio p{margin-bottom:8px}
+.teacher .bio ul{list-style:none;margin:0 0 8px}
+.teacher .bio li{padding-left:1.1em;text-indent:-1.1em}
+.teacher .bio li::before{content:"・";color:var(--gold);font-weight:900}
+.teacher details{border:0;border-top:1px dashed var(--line);border-radius:0;margin:0;box-shadow:none;background:transparent}
+.teacher summary{font-size:13.5px;min-height:48px;padding:12px 44px 12px 18px;color:var(--gold)}
+.teacher .tags{display:flex;flex-wrap:wrap;gap:6px;padding:6px 18px 18px}
+.teacher .tags span{font-size:12px;font-weight:700;background:#F4EFE6;color:#7A6236;border-radius:999px;padding:3px 10px}
+
+/* INFO */
+.info{background:var(--bg)}
+.info-card{background:var(--paper);border-radius:var(--r);box-shadow:var(--sh);padding:6px 18px;margin-top:8px}
+.info-row{display:flex;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.info-row:last-child{border-bottom:0}
+.info-row dt{font-weight:800;color:var(--sub);font-size:14.5px;flex:0 0 auto}
+.info-row dd{text-align:right;font-weight:800;font-size:15px}
+.sessions{display:grid;gap:12px;margin:14px 0 6px}
+.session{display:flex;background:var(--paper);border-radius:18px;overflow:hidden;box-shadow:var(--sh)}
+.session .d{flex:0 0 92px;background:linear-gradient(160deg,var(--navy2),var(--navy));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 6px;text-align:center}
+.session .d small{font-size:11px;color:var(--gold2);letter-spacing:.14em;font-weight:800}
+.session .d strong{font-size:26px;line-height:1.1;font-family:Georgia,serif}
+.session .d span{font-size:12px;color:rgba(255,255,255,.75)}
+.session .b{padding:12px 14px;line-height:1.55}
+.session .city{font-size:16px;font-weight:900}
+.session .city em{font-style:normal;font-size:12px;color:var(--mute);font-weight:700;margin-left:6px}
+.session .time{display:inline-block;font-size:12.5px;font-weight:800;color:#2F8F7A;background:#E7F4EF;border-radius:6px;padding:1px 8px;margin:4px 0}
+.session .venue{font-size:14px;font-weight:700}
+.session .addr{font-size:12px;color:var(--sub)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0 4px}
+.price{background:var(--paper);border-radius:16px;padding:14px 6px;text-align:center;box-shadow:var(--sh)}
+.price.tw{background:var(--navy);color:#fff}
+.price small{display:block;font-size:11.5px;color:var(--mute);letter-spacing:.06em}
+.price.tw small{color:var(--gold2)}
+.price strong{font-size:18px;font-family:Georgia,serif}
+
+/* FAQ */
+.faq{background:var(--paper)}
+details{background:var(--bg);border-radius:16px;margin-bottom:10px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:17px 48px 17px 18px;font-weight:800;position:relative;min-height:56px;font-size:15.5px;line-height:1.55}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:18px;top:50%;width:10px;height:10px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details .a{padding:0 18px 18px;color:var(--sub);font-size:15px;line-height:1.85}
+
+/* FINAL */
+.final{background:radial-gradient(120% 80% at 50% 100%,#1F3556 0%,var(--navy) 65%);color:#fff;text-align:center;padding-bottom:48px}
+.final h2{color:#fff;font-size:28px}
+.final p{color:rgba(255,255,255,.8)}
+.final .btn-note{color:rgba(255,255,255,.55)}
+.final .kicker{justify-content:center}
+.final .kicker::after{content:"";width:22px;height:2px;background:var(--gold);border-radius:2px}
+footer{padding:26px 24px 30px;font-size:12px;color:var(--mute);text-align:center;background:var(--navy);border-top:1px solid rgba(255,255,255,.08)}
+
+/* STICKY */
+.sticky{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:430px;z-index:50;
+  background:rgba(14,26,43,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.08);
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px}
+.sticky .txt{flex:1;line-height:1.35;color:#fff}
+.sticky .txt strong{font-size:14.5px;display:block}
+.sticky .txt small{font-size:11.5px;color:var(--gold2)}
+.sticky a{flex:0 0 auto;min-height:50px;padding:0 22px;border-radius:14px;background:linear-gradient(135deg,var(--cta1),var(--cta2));color:#fff;font-weight:900;font-size:16.5px;display:flex;align-items:center;text-decoration:none;box-shadow:0 8px 18px rgba(229,83,45,.4);letter-spacing:.06em}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <div class="page">
 
 <!-- ========== HERO ========== -->
 <header class="hero" id="top">
-  <div class="top">
+  <div class="brand"><b>DOERS AI</b><span>OPC ONE-PERSON COMPANY</span></div>
+  <div class="copy">
     <div class="tag">OPC 一人公司實戰班・1 天線下密集實作</div>
-    <h1>一個人，<br>也能打造<br>一間<span class="hl">會運作的公司</span>！</h1>
-    <p class="sub">不用請人、不用懂程式。把 AI 變成你的六大部門經理——品牌、行政、客服、自媒體、數據、研發，全部有人幫你顧。</p>
+    <h1>一個人，<br>也能打造<br>一間<span class="gold">會運作的公司</span>！</h1>
+    <p class="lead">不用請人、不用懂程式。把 AI 變成你的六大部門經理——品牌、行政、客服、自媒體、數據、研發，全部有人幫你顧。</p>
   </div>
-  <div class="img-r" style="margin:14px 22px"><img src="assets/hero.jpg" alt="一位創業者和六位 AI 部門助理一起工作" width="860" height="645"></div>
+  <div class="hero-img"><img src="assets/hero.jpg" alt="創業者與六位 AI 部門經理團隊合影" width="900" height="675" fetchpriority="high"></div>
   <div class="inner">
-    <div class="chips"><span class="chip">🏢 六大 OPC 營運模組</span><span class="chip">🧑‍💻 零程式背景可</span><span class="chip">📍 台灣・馬來西亞・新加坡</span></div>
-    <a class="btn cta" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">立即報名 OPC 一人公司實戰班 →</a>
-    <p class="btn-note">Build Your AI-Powered OPC!</p>
+    <div class="stats">
+      <div class="stat"><strong>6</strong><small>大 OPC 營運模組</small></div>
+      <div class="stat"><strong>1 天</strong><small>線下密集實作</small></div>
+      <div class="stat"><strong>0</strong><small>程式背景要求</small></div>
+    </div>
+    <a class="btn cta" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">立即報名 OPC 一人公司實戰班 <span class="arr">→</span></a>
+    <p class="btn-note">Build Your AI-Powered OPC!・台灣・馬來西亞・新加坡</p>
   </div>
 </header>
 
 <!-- ========== PAIN ========== -->
 <section class="pain">
-  <span class="eyebrow">你是不是也這樣？</span>
-  <h2>一個人做生意，<br>每天都像在打六份工</h2>
-  <div class="img-r"><img src="assets/pain.jpg" alt="深夜被郵件、訊息、報表淹沒的一人老闆" loading="lazy" width="860" height="645"></div>
-  <ul>
+  <div class="kicker reveal">Pain Points <em>你是不是也這樣？</em></div>
+  <h2 class="reveal">一個人做生意，<br>每天都像在打六份工</h2>
+  <div class="photo reveal"><img src="assets/pain.jpg" alt="深夜獨自被工作淹沒的一人老闆" loading="lazy" width="900" height="675"></div>
+  <ul class="pain-list reveal">
     <li>想做品牌網站，卻不知道從哪裡開始</li>
     <li>客戶訊息、報名回覆，回到半夜還回不完</li>
     <li>知道要經營自媒體，但每天想內容想到頭痛</li>
     <li>市場、競品、數字一堆，做決定還是靠感覺</li>
     <li>行政、檔案、行事曆亂成一團，重要的事一直被延後</li>
   </ul>
-  <p>不是你不夠努力，是<b>一個人的時間本來就有限</b>。大公司有六個部門分工，你卻只有自己。</p>
-  <p class="turn">如果，你也有一個團隊呢？</p>
+  <p class="reveal">不是你不夠努力，是<b>一個人的時間本來就有限</b>。大公司有六個部門分工，你卻只有自己。</p>
+  <div class="turn reveal"><small>WHAT IF</small>如果，你也有一個團隊呢？</div>
 </section>
 
 <!-- ========== WHAT IS OPC ========== -->
-<section class="what">
-  <span class="eyebrow">什麼是 OPC？</span>
-  <h2>OPC = One Person Company<br>一個人 + 一整隊 AI 經理</h2>
-  <div class="formula"><span>👤 你</span><b>＋</b><span>🤖 6 位 AI 經理</span><b>＝</b><span>🏢 一間公司</span></div>
-  <p>OPC 一人公司實戰班結合 <b>AI、Vibe Coding、自動化與六大 OPC 營運模組</b>，帶你從零開始打造屬於自己的一人公司。</p>
-  <p>你會實際建立品牌網站、AI 客服、自動回覆、自媒體內容、競品情報與產品素材系統——<span class="hl">不只是會用 AI，而是把 AI 變成你的團隊</span>，讓一個人的能力真正升級成一間公司的營運能力。</p>
-  <div class="img-r"><img src="assets/opc-concept.jpg" alt="一位老闆在中間，連接六個 AI 部門" loading="lazy" width="860" height="860"></div>
-  <h3>認識你的六位 AI 部門經理 👇</h3>
-  <div class="dept-grid">
-    <a href="#luna"><strong>📣 Luna</strong><small>品牌行銷部</small></a>
-    <a href="#ken"><strong>🗂️ Ken</strong><small>行政管理部</small></a>
-    <a href="#mia"><strong>🎧 Mia</strong><small>客戶服務部</small></a>
-    <a href="#leo"><strong>🎬 Leo</strong><small>業務自媒體部</small></a>
-    <a href="#zoe"><strong>📊 Zoe</strong><small>數據營運部</small></a>
-    <a href="#max"><strong>💡 Max</strong><small>產品研發部</small></a>
-  </div>
+<section class="what" id="concept">
+  <div class="kicker reveal">What is OPC <em>什麼是 OPC？</em></div>
+  <h2 class="reveal">OPC = One Person Company<br>一個人 + 一整隊 AI 經理</h2>
+  <div class="formula reveal"><span><small>YOU</small>你</span><b>＋</b><span><small>AI TEAM</small>6 位 AI 經理</span><b>＝</b><span><small>COMPANY</small>一間公司</span></div>
+  <p class="reveal">OPC 一人公司實戰班結合 <b>AI、Vibe Coding、自動化與六大 OPC 營運模組</b>，帶你從零開始打造屬於自己的一人公司。</p>
+  <p class="reveal">你會實際建立品牌網站、AI 客服、自動回覆、自媒體內容、競品情報與產品素材系統——<span class="mark">不只是會用 AI，而是把 AI 變成你的團隊</span>，讓一個人的能力真正升級成一間公司的營運能力。</p>
+  <div class="photo reveal"><img src="assets/opc-concept.jpg" alt="老闆坐在會議桌中央，六位經理向他報告" loading="lazy" width="900" height="900"></div>
+  <h3 class="reveal">認識你的六位 AI 部門經理</h3>
+  <div class="team reveal"><a href="#luna" style="--c:#D9577A"><img src="assets/luna.jpg" alt="Luna" loading="lazy" width="400" height="400"><strong>Luna</strong><small>品牌行銷部</small></a><a href="#ken" style="--c:#2F8F7A"><img src="assets/ken.jpg" alt="Ken" loading="lazy" width="400" height="400"><strong>Ken</strong><small>行政管理部</small></a><a href="#mia" style="--c:#4C7BD9"><img src="assets/mia.jpg" alt="Mia" loading="lazy" width="400" height="400"><strong>Mia</strong><small>客戶服務部</small></a><a href="#leo" style="--c:#C9862B"><img src="assets/leo.jpg" alt="Leo" loading="lazy" width="400" height="400"><strong>Leo</strong><small>業務自媒體部</small></a><a href="#zoe" style="--c:#2E8FB8"><img src="assets/zoe.jpg" alt="Zoe" loading="lazy" width="400" height="400"><strong>Zoe</strong><small>數據營運部</small></a><a href="#max" style="--c:#7A62C9"><img src="assets/max.jpg" alt="Max" loading="lazy" width="400" height="400"><strong>Max</strong><small>產品研發部</small></a></div>
 </section>
 
-<!-- =====================================================================
-     六位經理：每一區最上方是影片。
-     放影片的方法：只要改最下面 <script> 裡的 VIDEOS 設定（每位經理一行）。
-     ===================================================================== -->
+<section class="mgr-intro">
+  <div class="kicker reveal">Meet Your Team</div>
+  <h2 class="reveal">六位經理，<br>各自守好一個部門</h2>
+  <p class="reveal">每位經理先用一支短片自我介紹，再看看他們能幫你做哪些事。</p>
+</section>
 
 <!-- ===== Luna ===== -->
-<section class="mgr" id="luna" style="--c:#F07A4F;--soft:#FFF0E8">
-  <div class="video" data-mgr="luna" data-label="Luna 介紹影片（待放）"></div>
-  <div class="mgr-head">
-    <div class="avatar-wrap"><div class="avatar"><img data-avatar="luna" src="assets/avatar-placeholder.svg" alt="Luna 經理頭像" loading="lazy"></div><span class="av-note">頭像待依影片製作</span></div>
-    <div><div class="dept">品牌行銷部門經理</div><h3>Luna</h3></div>
+<section class="mgr" id="luna" style="--c:#D9577A">
+  <div class="mgr-top reveal"><span class="mgr-no">01<small> / 06</small></span><span class="mgr-en">Brand & Marketing</span></div>
+  <div class="video reveal" data-mgr="luna" data-label="Luna 介紹影片（待放）"></div>
+  <div class="mgr-id reveal">
+    <div class="avatar-wrap"><div class="avatar"><img data-avatar="luna" src="assets/avatar-placeholder.svg" alt="Luna 經理" loading="lazy" width="400" height="400"></div><span class="av-note">頭像待依影片製作</span></div>
+    <div><div class="dept">品牌行銷部門經理</div><h3>Luna <span>經理</span></h3></div>
   </div>
-  <div class="slogan">「用 AI 行銷，讓世界看見你！」</div>
-  <p>Luna 負責讓你的品牌被看見。從品牌定位、形象、網站，到每一檔活動與課程的宣傳，她幫你把想法變成一套有溫度、有一致感的品牌語言，再把廣告文案、視覺素材和電子報一次備好，最後追蹤品牌聲量，讓你知道哪裡做得好、哪裡還能更好。</p>
-  <div class="duties"><span>品牌網站建立</span><span>品牌活動規劃</span><span>品牌定位與形象</span><span>行銷活動企劃</span><span>廣告文案與視覺素材</span><span>活動與課程宣傳</span><span>電子報</span><span>品牌聲量追蹤</span></div>
-  <div class="can-title">✨ Luna 可以幫你做的事</div>
-  <div class="cards">
-    <div class="card"><span class="n">1</span><h4>打造你的品牌網站</h4><p>規劃網站架構、品牌介紹與服務頁，讓客戶一進來就懂你是誰。</p></div>
-    <div class="card"><span class="n">2</span><h4>一鍵產出活動宣傳包</h4><p>新課程、新活動要上線？廣告文案、視覺素材、宣傳貼文一次備齊。</p></div>
-    <div class="card"><span class="n">3</span><h4>電子報與聲量追蹤</h4><p>定期寫好電子報草稿，並追蹤品牌被討論的狀況，給你調整方向。</p></div>
-  </div>
-  <div class="learn"><b>📚 課堂上對應模組：品牌行銷部門</b><p>規劃 OPC 品牌網站完整架構，完成一個可正式對外使用、具備品牌展示、AI 客服、社群導流與商業轉換能力的品牌網站。</p></div>
+  <blockquote class="slogan reveal">「用 AI 行銷，讓世界看見你！」</blockquote>
+  <p class="reveal">Luna 負責讓你的品牌被看見。從品牌定位、形象、網站，到每一檔活動與課程的宣傳，她幫你把想法變成一套有溫度、有一致感的品牌語言，再把廣告文案、視覺素材和電子報一次備好，最後追蹤品牌聲量，讓你知道哪裡做得好、哪裡還能更好。</p>
+  <div class="duties reveal"><span>品牌網站建立</span><span>品牌活動規劃</span><span>品牌定位與形象</span><span>行銷活動企劃</span><span>廣告文案與視覺素材</span><span>活動與課程宣傳</span><span>電子報</span><span>品牌聲量追蹤</span></div>
+  <div class="can-title reveal">Luna 可以幫你做的事</div>
+  <div class="caps reveal"><div class="cap"><span class="cap-n">01</span><div><h4>打造你的品牌網站</h4><p>規劃網站架構、品牌介紹與服務頁，讓客戶一進來就懂你是誰。</p></div></div><div class="cap"><span class="cap-n">02</span><div><h4>一鍵產出活動宣傳包</h4><p>新課程、新活動要上線？廣告文案、視覺素材、宣傳貼文一次備齊。</p></div></div><div class="cap"><span class="cap-n">03</span><div><h4>電子報與聲量追蹤</h4><p>定期寫好電子報草稿，並追蹤品牌被討論的狀況，給你調整方向。</p></div></div></div>
+  <div class="learn reveal"><b>課堂上對應模組・品牌行銷部門</b><p>規劃 OPC 品牌網站完整架構，完成一個可正式對外使用、具備品牌展示、AI 客服、社群導流與商業轉換能力的品牌網站。</p></div>
 </section>
-
 <!-- ===== Ken ===== -->
-<section class="mgr" id="ken" style="--c:#4E9E86;--soft:#E9F6F1">
-  <div class="video" data-mgr="ken" data-label="Ken 介紹影片（待放）"></div>
-  <div class="mgr-head">
-    <div class="avatar-wrap"><div class="avatar"><img data-avatar="ken" src="assets/avatar-placeholder.svg" alt="Ken 經理頭像" loading="lazy"></div><span class="av-note">頭像待依影片製作</span></div>
-    <div><div class="dept">行政管理部門經理</div><h3>Ken</h3></div>
+<section class="mgr" id="ken" style="--c:#2F8F7A">
+  <div class="mgr-top reveal"><span class="mgr-no">02<small> / 06</small></span><span class="mgr-en">Administration</span></div>
+  <div class="video reveal" data-mgr="ken" data-label="Ken 介紹影片（待放）"></div>
+  <div class="mgr-id reveal">
+    <div class="avatar-wrap"><div class="avatar"><img data-avatar="ken" src="assets/avatar-placeholder.svg" alt="Ken 經理" loading="lazy" width="400" height="400"></div><span class="av-note">頭像待依影片製作</span></div>
+    <div><div class="dept">行政管理部門經理</div><h3>Ken <span>經理</span></h3></div>
   </div>
-  <div class="slogan">「讓工作有序，效率加倍！」</div>
-  <p>Ken 是公司的大管家。他幫你把流程寫成 SOP、排好行事曆與會議、整理文件和 Google Drive、追蹤每一件待辦，還會先把郵件分類、擬好回覆草稿。學員報名後的自動回信與資料整理，也交給他一手包辦，讓你不再被瑣事追著跑。</p>
-  <div class="duties"><span>流程規劃與 SOP</span><span>行事曆與會議安排</span><span>文件與檔案整理</span><span>待辦追蹤</span><span>郵件分類與回覆草稿</span><span>報表彙整</span><span>報名自動回信與資料整理</span><span>Google Drive 管理</span></div>
-  <div class="can-title">✨ Ken 可以幫你做的事</div>
-  <div class="cards">
-    <div class="card"><span class="n">1</span><h4>把雜事變成 SOP</h4><p>重複在做的事，整理成標準流程，下次照表操課、不再漏東漏西。</p></div>
-    <div class="card"><span class="n">2</span><h4>報名後自動回信</h4><p>有人報名就自動寄出確認信，並把學員資料整理到固定的表單裡。</p></div>
-    <div class="card"><span class="n">3</span><h4>信件與待辦不再爆炸</h4><p>郵件先分類、回覆先擬稿，待辦與行事曆一目了然。</p></div>
-  </div>
-  <div class="learn"><b>📚 課堂上對應模組：行政管理部門</b><p>建立資料整理與分類架構、表單收集與自動回覆流程，完成一套屬於自己的 OPC 行政管理系統。</p></div>
+  <blockquote class="slogan reveal">「讓工作有序，效率加倍！」</blockquote>
+  <p class="reveal">Ken 是公司的大管家。他幫你把流程寫成 SOP、排好行事曆與會議、整理文件和 Google Drive、追蹤每一件待辦，還會先把郵件分類、擬好回覆草稿。學員報名後的自動回信與資料整理，也交給他一手包辦，讓你不再被瑣事追著跑。</p>
+  <div class="duties reveal"><span>流程規劃與 SOP</span><span>行事曆與會議安排</span><span>文件與檔案整理</span><span>待辦追蹤</span><span>郵件分類與回覆草稿</span><span>報表彙整</span><span>報名自動回信與資料整理</span><span>Google Drive 管理</span></div>
+  <div class="can-title reveal">Ken 可以幫你做的事</div>
+  <div class="caps reveal"><div class="cap"><span class="cap-n">01</span><div><h4>把雜事變成 SOP</h4><p>重複在做的事，整理成標準流程，下次照表操課、不再漏東漏西。</p></div></div><div class="cap"><span class="cap-n">02</span><div><h4>報名後自動回信</h4><p>有人報名就自動寄出確認信，並把學員資料整理到固定的表單裡。</p></div></div><div class="cap"><span class="cap-n">03</span><div><h4>信件與待辦不再爆炸</h4><p>郵件先分類、回覆先擬稿，待辦與行事曆一目了然。</p></div></div></div>
+  <div class="learn reveal"><b>課堂上對應模組・行政管理部門</b><p>建立資料整理與分類架構、表單收集與自動回覆流程，完成一套屬於自己的 OPC 行政管理系統。</p></div>
 </section>
-
 <!-- ===== Mia ===== -->
-<section class="mgr" id="mia" style="--c:#E46F8E;--soft:#FDEDF2">
-  <div class="video" data-mgr="mia" data-label="Mia 介紹影片（待放）"></div>
-  <div class="mgr-head">
-    <div class="avatar-wrap"><div class="avatar"><img data-avatar="mia" src="assets/avatar-placeholder.svg" alt="Mia 經理頭像" loading="lazy"></div><span class="av-note">頭像待依影片製作</span></div>
-    <div><div class="dept">客戶服務部門經理</div><h3>Mia</h3></div>
+<section class="mgr" id="mia" style="--c:#4C7BD9">
+  <div class="mgr-top reveal"><span class="mgr-no">03<small> / 06</small></span><span class="mgr-en">Customer Service</span></div>
+  <div class="video reveal" data-mgr="mia" data-label="Mia 介紹影片（待放）"></div>
+  <div class="mgr-id reveal">
+    <div class="avatar-wrap"><div class="avatar"><img data-avatar="mia" src="assets/avatar-placeholder.svg" alt="Mia 經理" loading="lazy" width="400" height="400"></div><span class="av-note">頭像待依影片製作</span></div>
+    <div><div class="dept">客戶服務部門經理</div><h3>Mia <span>經理</span></h3></div>
   </div>
-  <div class="slogan">「24 小時在線，讓服務更貼心！」</div>
-  <p>Mia 是你的貼心客服。客戶與學員的詢問，她第一時間回覆；報名、上課通知準時送到；常見問題整理成 FAQ；收集回饋、做滿意度與售後關懷。會員電子報、生日賀卡、網站 AI 客服，也都由她細心照顧，讓每位客戶都感覺被記得。</p>
-  <div class="duties"><span>回覆客戶與學員詢問</span><span>報名與上課通知</span><span>FAQ 整理</span><span>客戶回饋與滿意度</span><span>售後關懷</span><span>會員電子報</span><span>生日賀卡</span><span>網站 AI 客服</span></div>
-  <div class="can-title">✨ Mia 可以幫你做的事</div>
-  <div class="cards">
-    <div class="card"><span class="n">1</span><h4>網站 AI 客服</h4><p>客戶半夜來問問題也有人回，常見問題自動解答。</p></div>
-    <div class="card"><span class="n">2</span><h4>通知與關懷不漏接</h4><p>報名、上課通知準時發，課後關懷與滿意度回饋自動收集。</p></div>
-    <div class="card"><span class="n">3</span><h4>會員經營小心意</h4><p>會員電子報、學員生日賀卡先擬好，讓服務更有溫度。</p></div>
-  </div>
-  <div class="learn"><b>📚 課堂上對應模組：客戶服務部門</b><p>建立客戶問題與 FAQ 資料收集機制，分析高頻問題，完成一套 AI 客戶服務系統。</p></div>
+  <blockquote class="slogan reveal">「24 小時在線，讓服務更貼心！」</blockquote>
+  <p class="reveal">Mia 是你的貼心客服。客戶與學員的詢問，她第一時間回覆；報名、上課通知準時送到；常見問題整理成 FAQ；收集回饋、做滿意度與售後關懷。會員電子報、生日賀卡、網站 AI 客服，也都由她細心照顧，讓每位客戶都感覺被記得。</p>
+  <div class="duties reveal"><span>回覆客戶與學員詢問</span><span>報名與上課通知</span><span>FAQ 整理</span><span>客戶回饋與滿意度</span><span>售後關懷</span><span>會員電子報</span><span>生日賀卡</span><span>網站 AI 客服</span></div>
+  <div class="can-title reveal">Mia 可以幫你做的事</div>
+  <div class="caps reveal"><div class="cap"><span class="cap-n">01</span><div><h4>網站 AI 客服</h4><p>客戶半夜來問問題也有人回，常見問題自動解答。</p></div></div><div class="cap"><span class="cap-n">02</span><div><h4>通知與關懷不漏接</h4><p>報名、上課通知準時發，課後關懷與滿意度回饋自動收集。</p></div></div><div class="cap"><span class="cap-n">03</span><div><h4>會員經營小心意</h4><p>會員電子報、學員生日賀卡先擬好，讓服務更有溫度。</p></div></div></div>
+  <div class="learn reveal"><b>課堂上對應模組・客戶服務部門</b><p>建立客戶問題與 FAQ 資料收集機制，分析高頻問題，完成一套 AI 客戶服務系統。</p></div>
 </section>
-
 <!-- ===== Leo ===== -->
-<section class="mgr" id="leo" style="--c:#E0A21B;--soft:#FFF6DC">
-  <div class="video" data-mgr="leo" data-label="Leo 介紹影片（待放）"></div>
-  <div class="mgr-head">
-    <div class="avatar-wrap"><div class="avatar"><img data-avatar="leo" src="assets/avatar-placeholder.svg" alt="Leo 經理頭像" loading="lazy"></div><span class="av-note">頭像待依影片製作</span></div>
-    <div><div class="dept">業務自媒體部門經理</div><h3>Leo</h3></div>
+<section class="mgr" id="leo" style="--c:#C9862B">
+  <div class="mgr-top reveal"><span class="mgr-no">04<small> / 06</small></span><span class="mgr-en">Sales & Social Media</span></div>
+  <div class="video reveal" data-mgr="leo" data-label="Leo 介紹影片（待放）"></div>
+  <div class="mgr-id reveal">
+    <div class="avatar-wrap"><div class="avatar"><img data-avatar="leo" src="assets/avatar-placeholder.svg" alt="Leo 經理" loading="lazy" width="400" height="400"></div><span class="av-note">頭像待依影片製作</span></div>
+    <div><div class="dept">業務自媒體部門經理</div><h3>Leo <span>經理</span></h3></div>
   </div>
-  <div class="slogan">「內容創造流量，流量帶來機會！」</div>
-  <p>Leo 是你的流量引擎。Facebook 每日發文、短影音腳本與影片產出，是他的主戰場；他也幫你排好內容行事曆、經營社群，並主動開發潛在客戶、整理合作邀約，讓內容不只是曝光，而是帶來真正的生意。</p>
-  <div class="duties"><span>Facebook 每日發文</span><span>短影音腳本</span><span>影片產出</span><span>社群經營</span><span>內容行事曆</span><span>潛在客戶開發</span><span>合作邀約</span></div>
-  <div class="can-title">✨ Leo 可以幫你做的事</div>
-  <div class="cards">
-    <div class="card"><span class="n">1</span><h4>每天都有貼文</h4><p>依你的品牌調性產出 Facebook 每日貼文，你只要看過、按下發布。</p></div>
-    <div class="card"><span class="n">2</span><h4>短影音從腳本到成片</h4><p>從題目發想、腳本到影片產出，讓影音成為你的業務資產。</p></div>
-    <div class="card"><span class="n">3</span><h4>開發客戶與合作</h4><p>整理潛在客戶名單、擬好合作邀約，幫你把流量變成機會。</p></div>
-  </div>
-  <div class="learn"><b>📚 課堂上對應模組：業務自媒體部門</b><p>規劃品牌影音與自媒體內容，完成屬於自己的客製 AI MV 與自媒體內容系統。</p></div>
+  <blockquote class="slogan reveal">「內容創造流量，流量帶來機會！」</blockquote>
+  <p class="reveal">Leo 是你的流量引擎。Facebook 每日發文、短影音腳本與影片產出，是他的主戰場；他也幫你排好內容行事曆、經營社群，並主動開發潛在客戶、整理合作邀約，讓內容不只是曝光，而是帶來真正的生意。</p>
+  <div class="duties reveal"><span>Facebook 每日發文</span><span>短影音腳本</span><span>影片產出</span><span>社群經營</span><span>內容行事曆</span><span>潛在客戶開發</span><span>合作邀約</span></div>
+  <div class="can-title reveal">Leo 可以幫你做的事</div>
+  <div class="caps reveal"><div class="cap"><span class="cap-n">01</span><div><h4>每天都有貼文</h4><p>依你的品牌調性產出 Facebook 每日貼文，你只要看過、按下發布。</p></div></div><div class="cap"><span class="cap-n">02</span><div><h4>短影音從腳本到成片</h4><p>從題目發想、腳本到影片產出，讓影音成為你的業務資產。</p></div></div><div class="cap"><span class="cap-n">03</span><div><h4>開發客戶與合作</h4><p>整理潛在客戶名單、擬好合作邀約，幫你把流量變成機會。</p></div></div></div>
+  <div class="learn reveal"><b>課堂上對應模組・業務自媒體部門</b><p>規劃品牌影音與自媒體內容，完成屬於自己的客製 AI MV 與自媒體內容系統。</p></div>
 </section>
-
 <!-- ===== Zoe ===== -->
-<section class="mgr" id="zoe" style="--c:#4A8CC9;--soft:#EAF3FB">
-  <div class="video" data-mgr="zoe" data-label="Zoe 介紹影片（待放）"></div>
-  <div class="mgr-head">
-    <div class="avatar-wrap"><div class="avatar"><img data-avatar="zoe" src="assets/avatar-placeholder.svg" alt="Zoe 經理頭像" loading="lazy"></div><span class="av-note">頭像待依影片製作</span></div>
-    <div><div class="dept">數據營運部門經理</div><h3>Zoe</h3></div>
+<section class="mgr" id="zoe" style="--c:#2E8FB8">
+  <div class="mgr-top reveal"><span class="mgr-no">05<small> / 06</small></span><span class="mgr-en">Data & Operations</span></div>
+  <div class="video reveal" data-mgr="zoe" data-label="Zoe 介紹影片（待放）"></div>
+  <div class="mgr-id reveal">
+    <div class="avatar-wrap"><div class="avatar"><img data-avatar="zoe" src="assets/avatar-placeholder.svg" alt="Zoe 經理" loading="lazy" width="400" height="400"></div><span class="av-note">頭像待依影片製作</span></div>
+    <div><div class="dept">數據營運部門經理</div><h3>Zoe <span>經理</span></h3></div>
   </div>
-  <div class="slogan">「數據驅動，精準決策！」</div>
-  <p>Zoe 是公司的總控台。所有活動的進度與成效，她統一追蹤；營收與報名數據、社群與廣告成效、市場與競品動態，整理成儀表板與週報月報，再給你具體的營運改善建議。從此做決定，不再只靠感覺。</p>
-  <div class="duties"><span>全部活動總控台</span><span>營收與報名數據</span><span>社群與廣告成效</span><span>儀表板與週報月報</span><span>市場與競品研究</span><span>營運改善建議</span></div>
-  <div class="can-title">✨ Zoe 可以幫你做的事</div>
-  <div class="cards">
-    <div class="card"><span class="n">1</span><h4>一頁看懂公司狀況</h4><p>把所有活動進度與成效收進總控台，打開手機就知道現在怎麼樣。</p></div>
-    <div class="card"><span class="n">2</span><h4>自動週報、月報</h4><p>營收、報名、社群與廣告成效，定期整理好送到你面前。</p></div>
-    <div class="card"><span class="n">3</span><h4>競品與市場情報</h4><p>固定追蹤市場與競品變化，附上可以馬上執行的改善建議。</p></div>
-  </div>
-  <div class="learn"><b>📚 課堂上對應模組：數據營運部門</b><p>建立競品與市場情報分析架構、規劃定期自動化營運報告，完成一套 OPC 商業情報系統。</p></div>
+  <blockquote class="slogan reveal">「數據驅動，精準決策！」</blockquote>
+  <p class="reveal">Zoe 是公司的總控台。所有活動的進度與成效，她統一追蹤；營收與報名數據、社群與廣告成效、市場與競品動態，整理成儀表板與週報月報，再給你具體的營運改善建議。從此做決定，不再只靠感覺。</p>
+  <div class="duties reveal"><span>全部活動總控台</span><span>營收與報名數據</span><span>社群與廣告成效</span><span>儀表板與週報月報</span><span>市場與競品研究</span><span>營運改善建議</span></div>
+  <div class="can-title reveal">Zoe 可以幫你做的事</div>
+  <div class="caps reveal"><div class="cap"><span class="cap-n">01</span><div><h4>一頁看懂公司狀況</h4><p>把所有活動進度與成效收進總控台，打開手機就知道現在怎麼樣。</p></div></div><div class="cap"><span class="cap-n">02</span><div><h4>自動週報、月報</h4><p>營收、報名、社群與廣告成效，定期整理好送到你面前。</p></div></div><div class="cap"><span class="cap-n">03</span><div><h4>競品與市場情報</h4><p>固定追蹤市場與競品變化，附上可以馬上執行的改善建議。</p></div></div></div>
+  <div class="learn reveal"><b>課堂上對應模組・數據營運部門</b><p>建立競品與市場情報分析架構、規劃定期自動化營運報告，完成一套 OPC 商業情報系統。</p></div>
 </section>
-
 <!-- ===== Max ===== -->
-<section class="mgr" id="max" style="--c:#8A6FD1;--soft:#F1EDFB">
-  <div class="video" data-mgr="max" data-label="Max 介紹影片（待放）"></div>
-  <div class="mgr-head">
-    <div class="avatar-wrap"><div class="avatar"><img data-avatar="max" src="assets/avatar-placeholder.svg" alt="Max 經理頭像" loading="lazy"></div><span class="av-note">頭像待依影片製作</span></div>
-    <div><div class="dept">產品研發部門經理</div><h3>Max</h3></div>
+<section class="mgr" id="max" style="--c:#7A62C9">
+  <div class="mgr-top reveal"><span class="mgr-no">06<small> / 06</small></span><span class="mgr-en">Product R&D</span></div>
+  <div class="video reveal" data-mgr="max" data-label="Max 介紹影片（待放）"></div>
+  <div class="mgr-id reveal">
+    <div class="avatar-wrap"><div class="avatar"><img data-avatar="max" src="assets/avatar-placeholder.svg" alt="Max 經理" loading="lazy" width="400" height="400"></div><span class="av-note">頭像待依影片製作</span></div>
+    <div><div class="dept">產品研發部門經理</div><h3>Max <span>經理</span></h3></div>
   </div>
-  <div class="slogan">「用 AI 打造未來的產品！」</div>
-  <p>Max 是你的創意實驗室。每天整理日報、陪你發想創意、規劃課程與產品，研究最新的 AI 工具與自動化；網站、系統開發與新功能原型，他都能快速做出來給你試，讓腦中的點子變成看得到、摸得到的產品。</p>
-  <div class="duties"><span>每日日報</span><span>創意發想</span><span>課程與產品規劃</span><span>AI 工具與自動化研究</span><span>網站與系統開發</span><span>新功能原型</span></div>
-  <div class="can-title">✨ Max 可以幫你做的事</div>
-  <div class="cards">
-    <div class="card"><span class="n">1</span><h4>每日日報＋新點子</h4><p>每天整理重點資訊，順便丟出可以做成產品或課程的新點子。</p></div>
-    <div class="card"><span class="n">2</span><h4>課程與產品規劃</h4><p>從目標客群、內容架構到宣傳素材，陪你把產品一步步做出來。</p></div>
-    <div class="card"><span class="n">3</span><h4>快速做出原型</h4><p>網站、小工具、自動化流程，先做一版試試看，再慢慢改到好。</p></div>
-  </div>
-  <div class="learn"><b>📚 課堂上對應模組：產品研發部門</b><p>建立產品與服務的專屬 AI 專案、規劃文案海報素材產出流程，完成一套 AI 產品內容工廠。</p></div>
-  <a class="btn cta" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">我也想要這六位經理 →</a>
+  <blockquote class="slogan reveal">「用 AI 打造未來的產品！」</blockquote>
+  <p class="reveal">Max 是你的創意實驗室。每天整理日報、陪你發想創意、規劃課程與產品，研究最新的 AI 工具與自動化；網站、系統開發與新功能原型，他都能快速做出來給你試，讓腦中的點子變成看得到、摸得到的產品。</p>
+  <div class="duties reveal"><span>每日日報</span><span>創意發想</span><span>課程與產品規劃</span><span>AI 工具與自動化研究</span><span>網站與系統開發</span><span>新功能原型</span></div>
+  <div class="can-title reveal">Max 可以幫你做的事</div>
+  <div class="caps reveal"><div class="cap"><span class="cap-n">01</span><div><h4>每日日報＋新點子</h4><p>每天整理重點資訊，順便丟出可以做成產品或課程的新點子。</p></div></div><div class="cap"><span class="cap-n">02</span><div><h4>課程與產品規劃</h4><p>從目標客群、內容架構到宣傳素材，陪你把產品一步步做出來。</p></div></div><div class="cap"><span class="cap-n">03</span><div><h4>快速做出原型</h4><p>網站、小工具、自動化流程，先做一版試試看，再慢慢改到好。</p></div></div></div>
+  <div class="learn reveal"><b>課堂上對應模組・產品研發部門</b><p>建立產品與服務的專屬 AI 專案、規劃文案海報素材產出流程，完成一套 AI 產品內容工廠。</p></div>
+  <a class="btn cta reveal" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">我也想要這六位經理 <span class="arr">→</span></a>
 </section>
 
 <!-- ========== A DAY ========== -->
 <section class="day">
-  <span class="eyebrow">AI 公司的一天</span>
-  <h2>當你有了六位 AI 經理，<br>一天會變成這樣</h2>
-  <div class="img-r"><img src="assets/day.jpg" alt="老闆悠閒喝咖啡，手機上的工作都已完成" loading="lazy" width="860" height="645"></div>
-  <ul class="timeline">
+  <div class="kicker reveal">A Day in OPC <em>AI 公司的一天</em></div>
+  <h2 class="reveal">當你有了六位 AI 經理，<br>一天會變成這樣</h2>
+  <div class="photo reveal"><img src="assets/day.jpg" alt="早晨喝咖啡看手機，工作都已完成" loading="lazy" width="900" height="675"></div>
+  <ul class="timeline reveal">
     <li><time>早上</time><p>Max 的日報和新點子已經在手機裡，Zoe 把昨天的數據整理成一頁重點。</p></li>
     <li><time>上午</time><p>Leo 把今天的貼文和短影音腳本備好，你看過、按下發布就好。</p></li>
     <li><time>中午</time><p>Mia 回完客戶詢問、送出上課通知；Ken 把新報名學員的資料整理好、確認信也寄出了。</p></li>
@@ -361,26 +397,26 @@
 
 <!-- ========== WHAT YOU GET ========== -->
 <section class="get">
-  <span class="eyebrow">短短 1 天，你會帶走什麼</span>
-  <h2>不是練習，是可以馬上<br>對外使用的六套系統</h2>
-  <ol>
-    <li><strong>OPC 行政管理系統</strong><span>資料蒐集、整理、保存與回覆形成標準化流程。</span></li>
-    <li><strong>OPC 品牌網站</strong><span>品牌展示、AI 客服、社群導流與商業轉換，一次到位。</span></li>
-    <li><strong>AI 客戶服務系統</strong><span>客戶問題持續被收集、分析、整理，轉化成服務優化依據。</span></li>
-    <li><strong>品牌 AI MV＋自媒體內容系統</strong><span>讓影音內容成為持續曝光、導流的業務資產。</span></li>
-    <li><strong>OPC 商業情報系統</strong><span>定期掌握市場、競品與產業變化，決策有資料可參考。</span></li>
-    <li><strong>AI 產品內容工廠</strong><span>持續產出宣傳文案、海報與行銷素材。</span></li>
+  <div class="kicker reveal">What You Get <em>短短 1 天，你會帶走什麼</em></div>
+  <h2 class="reveal">不是練習，是可以馬上<br>對外使用的六套系統</h2>
+  <ol class="sys reveal">
+    <li><div><strong>OPC 行政管理系統</strong><span>資料蒐集、整理、保存與回覆形成標準化流程。</span></div></li>
+    <li><div><strong>OPC 品牌網站</strong><span>品牌展示、AI 客服、社群導流與商業轉換，一次到位。</span></div></li>
+    <li><div><strong>AI 客戶服務系統</strong><span>客戶問題持續被收集、分析、整理，轉化成服務優化依據。</span></div></li>
+    <li><div><strong>品牌 AI MV＋自媒體內容系統</strong><span>讓影音內容成為持續曝光、導流的業務資產。</span></div></li>
+    <li><div><strong>OPC 商業情報系統</strong><span>定期掌握市場、競品與產業變化，決策有資料可參考。</span></div></li>
+    <li><div><strong>AI 產品內容工廠</strong><span>持續產出宣傳文案、海報與行銷素材。</span></div></li>
   </ol>
-  <p class="sub" style="margin-top:14px">課程教的不只是工具操作，而是「用 AI 建立系統的思維與方法」。工具會更新，但這套六大部門的架構依然適用。</p>
-  <a class="btn cta" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">帶走六套系統，立即報名 →</a>
+  <p class="sub reveal" style="margin-top:16px">課程教的不只是工具操作，而是「用 AI 建立系統的思維與方法」。工具會更新，但這套六大部門的架構依然適用。</p>
+  <a class="btn cta reveal" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">帶走六套系統，立即報名 <span class="arr">→</span></a>
 </section>
 
 <!-- ========== INSTRUCTORS ========== -->
 <section class="instructors" id="instructors">
-  <span class="eyebrow">講師介紹</span>
-  <h2>實戰派師資，<br>帶你一步步做出來</h2>
+  <div class="kicker reveal">Instructors <em style="color:rgba(255,255,255,.6)">講師介紹</em></div>
+  <h2 class="reveal">實戰派師資，<br>帶你一步步做出來</h2>
   <div class="teachers">
-    <div class="teacher">
+    <div class="teacher reveal">
       <div class="ph"><img src="assets/teacher-lin.jpg" alt="林偉賢博士" loading="lazy"><div><h3>林偉賢 博士</h3><div class="ttl">實踐家教育集團 董事長</div></div></div>
       <div class="tagline">「亞洲最具影響力的教育家」</div>
       <div class="bio"><p>實踐家教育集團董事長；華文Money&amp;You，華文美國BSE企業家商院創辦人；實踐家商業培訓學院創辦人；DBS創業學院、YDBS菁創學院聯合創辦人；馬來西亞首相署中小企業拓展中心國際戰略智囊。</p></div>
@@ -391,7 +427,7 @@
       </div></details>
       <div class="tags"><span>企業培訓大師</span><span>亞洲趨勢專家</span><span>激勵大師</span></div>
     </div>
-    <div class="teacher">
+    <div class="teacher reveal">
       <div class="ph"><img src="assets/teacher-andy.jpg" alt="Andy 老師" loading="lazy"><div><h3>Andy 老師</h3><div class="ttl">AI轉型專家｜AI 培訓講師</div></div></div>
       <div class="tagline">「你不用很厲害才開始，而是開始了才變厲害！」</div>
       <div class="bio"><ul>
@@ -405,7 +441,7 @@
       </ul><p><b>專長：</b>LLM全方位應用、AI工具與辦公室應用、企業AI轉型</p></div>
       <div class="tags"><span>AI 訓練師</span><span>連鎖加盟顧問</span><span>企業轉型</span><span>ChatGPT</span><span>Gemini</span></div>
     </div>
-    <div class="teacher">
+    <div class="teacher reveal">
       <div class="ph"><img src="assets/teacher-peng.jpg" alt="彭振祐老師" loading="lazy"><div><h3>彭振祐 老師</h3><div class="ttl">AI 創作與品牌設計專家</div></div></div>
       <div class="tagline">「用 AI 打造你的品牌視覺力」</div>
       <div class="bio"><p>專注於 AI 辦公室應用、AI 影片製作與品牌視覺設計。協助企業與個人利用 AI 工具打造專業品牌形象，降低設計成本同時提升創作品質。課程深受創業者與行銷人員喜愛。</p><p><b>專長：</b>AI影片製作、辦公室AI應用</p></div>
@@ -416,49 +452,51 @@
 </section>
 
 <!-- ========== COURSE INFO ========== -->
-<section class="info">
-  <span class="eyebrow">課程資訊</span>
-  <h2>OPC 一人公司實戰班</h2>
-  <dl>
+<section class="info" id="info">
+  <div class="kicker reveal">Course Info <em>課程資訊</em></div>
+  <h2 class="reveal">OPC 一人公司實戰班</h2>
+  <dl class="info-card reveal">
     <div class="info-row"><dt>上課形式</dt><dd>1 天線下密集實作</dd></div>
+    <div class="info-row"><dt>上課時間</dt><dd>09:00–21:00</dd></div>
     <div class="info-row"><dt>開課地區</dt><dd>台灣・馬來西亞・新加坡</dd></div>
     <div class="info-row"><dt>適合對象</dt><dd>想創業或升級個人能力的人<br>不需要程式背景</dd></div>
-    <div class="info-row"><dt>上課時間</dt><dd>09:00–21:00</dd></div>
   </dl>
-  <h3 style="margin-top:22px">📅 近期開課場次</h3>
+  <h3 class="reveal" style="margin-top:28px">近期開課場次</h3>
   <div class="sessions">
-    <div class="session"><div class="city">📍 高雄</div><div class="date">2026/11/28（六）</div><div class="no">⏰ 09:00–21:00</div><div class="no">OPC 一人公司實戰班・第 6 期</div><div class="venue">實踐家辦公室・1A會議室</div><div class="addr">高雄市前金區榮復里五福三路63號11樓</div></div>
-    <div class="session"><div class="city">📍 吉隆坡</div><div class="date">2026/12/09（三）</div><div class="no">⏰ 09:00–21:00</div><div class="no">OPC 一人公司實戰班・第 7 期</div><div class="venue">實踐家總部</div><div class="addr">T7-7-1 Tower 7 Maju Link, Jalan Lingkaran Tengah 2, Bandar Tasik Selatan, KL 57000</div></div>
-    <div class="session"><div class="city">📍 台北</div><div class="date">2026/12/18（五）</div><div class="no">⏰ 09:00–21:00</div><div class="no">OPC 一人公司實戰班・第 8 期</div><div class="venue">臺北矽谷國際會議中心</div><div class="addr">新北市新店區北新路三段223號2樓（捷運大坪林站）</div></div>
+    <div class="session reveal"><div class="d"><small>NOV</small><strong>28</strong><span>2026・週六</span></div><div class="b"><div class="city">高雄<em>第 6 期</em></div><span class="time">09:00–21:00</span><div class="venue">實踐家辦公室・1A會議室</div><div class="addr">高雄市前金區榮復里五福三路63號11樓</div></div></div>
+    <div class="session reveal"><div class="d"><small>DEC</small><strong>09</strong><span>2026・週三</span></div><div class="b"><div class="city">吉隆坡<em>第 7 期</em></div><span class="time">09:00–21:00</span><div class="venue">實踐家總部</div><div class="addr">T7-7-1 Tower 7 Maju Link, Jalan Lingkaran Tengah 2, Bandar Tasik Selatan, KL 57000</div></div></div>
+    <div class="session reveal"><div class="d"><small>DEC</small><strong>18</strong><span>2026・週五</span></div><div class="b"><div class="city">台北<em>第 8 期</em></div><span class="time">09:00–21:00</span><div class="venue">臺北矽谷國際會議中心</div><div class="addr">新北市新店區北新路三段223號2樓（捷運大坪林站）</div></div></div>
   </div>
   <p class="footnote">＊場次依官網「近期開課」公告，每場名額有限。</p>
-  <div class="price-grid">
-    <div class="price"><small>🇹🇼 台灣</small><strong>NT$8,800</strong></div>
-    <div class="price"><small>🇲🇾 馬來西亞</small><strong>RM1,180</strong></div>
-    <div class="price"><small>🇸🇬 新加坡</small><strong>SGD480</strong></div>
+  <div class="price-grid reveal">
+    <div class="price tw"><small>台灣</small><strong>NT$8,800</strong></div>
+    <div class="price"><small>馬來西亞</small><strong>RM1,180</strong></div>
+    <div class="price"><small>新加坡</small><strong>SGD480</strong></div>
   </div>
   <p class="footnote">＊價格依官網公告，實際以報名頁為準。</p>
-  <a class="btn cta" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">前往報名頁 →</a>
+  <a class="btn cta reveal" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">前往報名頁 <span class="arr">→</span></a>
 </section>
 
 <!-- ========== FAQ ========== -->
 <section class="faq">
-  <span class="eyebrow">常見問題</span>
-  <h2>報名前，你可能想問</h2>
+  <div class="kicker reveal">FAQ <em>常見問題</em></div>
+  <h2 class="reveal">報名前，你可能想問</h2>
+  <div class="reveal">
   <details><summary>完全沒有技術背景，也可以上嗎？</summary><div class="a">完全適合！課程設計給任何想創業或升級個人能力的人，不需要程式背景。全程實作導向、使用 AI 工具輔助，讓每位學員都能在 1 天內完成六大 OPC 系統。</div></details>
   <details><summary>上完課，真的能建立一間會運作的公司嗎？</summary><div class="a">課程結束後，你將擁有品牌網站、AI 客服系統、自媒體內容、商業情報系統與產品素材工廠。這些不只是練習，而是可以立即對外使用的真實系統，讓你的一人公司從第一天就能運作。</div></details>
   <details><summary>AI 工具更新那麼快，學了會不會很快過時？</summary><div class="a">OPC 課程教的不是特定工具的操作，而是「用 AI 建立系統的思維與方法」。即使工具更新，這套思維框架和六大部門的架構依然適用。</div></details>
   <details><summary>課後有支援嗎？</summary><div class="a">課程結束後，可以加入實踐家學員社群，獲得 AI 工具更新、案例分享與同學交流。其他服務安排請向當地服務團隊確認。</div></details>
   <details><summary>什麼時候、在哪裡上課？</summary><div class="a">近期開課場次如下（依官網公告）：<br>・<b>高雄</b> 2026/11/28（六）09:00–21:00 第 6 期｜實踐家辦公室 1A會議室<br>・<b>吉隆坡</b> 2026/12/09（三）09:00–21:00 第 7 期｜實踐家總部<br>・<b>台北</b> 2026/12/18（五）09:00–21:00 第 8 期｜臺北矽谷國際會議中心<br>每場名額有限，最新場次請以報名頁為準。</div></details>
+  </div>
 </section>
 
 <!-- ========== FINAL CTA ========== -->
 <section class="final" id="signup">
-  <span class="eyebrow">現在就開始</span>
-  <h2>別再一個人硬撐了<br>讓 AI 成為你的團隊</h2>
-  <div class="img-r"><img src="assets/cta.jpg" alt="學員在教室裡開心打造自己的系統" loading="lazy" width="860" height="645"></div>
-  <p>只要 1 天，你帶走的不只是一堆 AI 工具，<br>而是一間<b>真正會運作的一人公司</b>，<br>和六位隨時待命的 AI 部門經理。</p>
-  <a class="btn cta" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">立即報名 OPC 一人公司實戰班 →</a>
+  <div class="kicker reveal">Start Now</div>
+  <h2 class="reveal">別再一個人硬撐了<br>讓 AI 成為你的團隊</h2>
+  <div class="photo reveal"><img src="assets/cta.jpg" alt="成人學員在課堂上實作" loading="lazy" width="900" height="675"></div>
+  <p class="reveal">只要 1 天，你帶走的不只是一堆 AI 工具，<br>而是一間<b style="color:#fff">真正會運作的一人公司</b>，<br>和六位隨時待命的 AI 部門經理。</p>
+  <a class="btn cta reveal" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">立即報名 OPC 一人公司實戰班 <span class="arr">→</span></a>
   <p class="btn-note">點擊後前往 doersai.org 官方課程頁</p>
 </section>
 
@@ -467,25 +505,21 @@
   DOERS GROUP 實踐家知識管理集團
 </footer>
 
-</div><!-- /.page -->
+</div>
 
-<!-- 底部固定報名列 -->
 <div class="sticky">
   <div class="txt"><strong>OPC 一人公司實戰班</strong><small>11/28 高雄・12/9 吉隆坡・12/18 台北</small></div>
   <a class="cta" href="https://doersai.org/courses/vibe-coding" target="_blank" rel="noopener">立即報名</a>
 </div>
 
 <script>
-/* ================================================================
-   ★ 報名網址（所有報名按鈕都連到這裡）
-   ================================================================ */
+/* ★ 報名網址（所有報名按鈕都連到這裡） */
 var SIGNUP_URL = "https://doersai.org/courses/vibe-coding";
 
 /* ================================================================
    ★ 六位經理的介紹影片（影片檔放在網站的 videos/ 資料夾）
-   src   ：影片檔路徑；poster：影片播放前顯示的封面圖
-   ratio ："16:7"＝超寬橫式（目前 6 支都是）；"16:9"＝橫式；"9:16"＝直式
-   src 留空 "" 就會顯示「待放」的佔位框。
+   src：影片檔路徑；poster：播放前的封面圖
+   ratio："16:7"＝超寬橫式（目前 6 支都是）；"16:9"＝橫式；"9:16"＝直式
    ================================================================ */
 var VIDEOS = {
   luna: { src: "videos/luna.mp4", poster: "assets/posters/luna.jpg", ratio: "16:7" },   // Luna 品牌行銷部
@@ -496,17 +530,14 @@ var VIDEOS = {
   max:  { src: "videos/max.mp4",  poster: "assets/posters/max.jpg",  ratio: "16:7" }    // Max  產品研發部
 };
 
-/* ================================================================
-   ★ 六位經理的頭像 —— 依影片裡的經理形象做好後，放進 assets/ 資料夾，
-     把檔名填進來即可（例："assets/luna.jpg"）。留空 "" 就顯示灰色人形佔位圖。
-   ================================================================ */
+/* ★ 六位經理的頭像（留空 "" 會顯示灰色人形佔位圖） */
 var AVATARS = {
-  luna: "assets/luna.jpg",   // Luna 品牌行銷部
-  ken:  "assets/ken.jpg",   // Ken  行政管理部
-  mia:  "assets/mia.jpg",   // Mia  客戶服務部
-  leo:  "assets/leo.jpg",   // Leo  業務自媒體部
-  zoe:  "assets/zoe.jpg",   // Zoe  數據營運部
-  max:  "assets/max.jpg"    // Max  產品研發部
+  luna: "assets/luna.jpg",
+  ken:  "assets/ken.jpg",
+  mia:  "assets/mia.jpg",
+  leo:  "assets/leo.jpg",
+  zoe:  "assets/zoe.jpg",
+  max:  "assets/max.jpg"
 };
 
 (function(){
@@ -527,10 +558,17 @@ var AVATARS = {
       v.setAttribute("aria-label", box.getAttribute("data-label").replace("（待放）", ""));
       box.appendChild(v);
     } else {
-      box.innerHTML = '<div class="ph"><div class="play">▶</div><strong>' + box.getAttribute("data-label") +
-        '</strong><small>' + (cfg.ratio === "9:16" ? "9:16 直式" : cfg.ratio + " 橫式") + '・影片</small></div>';
+      box.innerHTML = '<div class="ph"><strong>' + box.getAttribute("data-label") + '</strong></div>';
     }
   });
+  /* 捲動淡入 */
+  var els = document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {rootMargin:"0px 0px -8% 0px", threshold:0.08});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add("in"); }); }
 })();
 </script>
 </body>
